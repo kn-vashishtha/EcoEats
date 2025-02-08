@@ -203,13 +203,13 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'  # Replace with your SMTP server
-# EMAIL_PORT = 587  # Replace with your SMTP server's port
+EMAIL_HOST = 'smtp.gmail.com'  # Replace with your SMTP server
+EMAIL_PORT = 587  # Replace with your SMTP server's port
 EMAIL_USE_TLS = True
 EMAIL_HOST_SSL = False
-# EMAIL_HOST_USER = '077bct079.saurav@pcampus.edu.np'  # Replace with your email
+EMAIL_HOST_USER = '077bct079.saurav@pcampus.edu.np'  # Replace with your email
 EMAIL_HOST_USER = 'shubhomkar.m@gmail.com'
-# EMAIL_HOST_PASSWORD = 'rbirynhxfbrnsscb'  # Replace with your email password
+EMAIL_HOST_PASSWORD = 'rbirynhxfbrnsscb'  # Replace with your email password
 DEFAULT_FROM_EMAIL = 'shubhomkar.m@gmail.com'  # Replace with your default email
 
 OPENAI_API_KEY = config('OPENAI_API_KEY')
